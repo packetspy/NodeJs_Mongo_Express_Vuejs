@@ -2,8 +2,10 @@
   "name": "tutorial_mongo_nodejs_express_vuejs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "nodemon server",
+    "debug": "node --inspect server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,9 +20,18 @@
   },
   "homepage": "https://github.com/packetspy/tutorial_mongo_nodejs_express_vuejs#readme",
   "dependencies": {
+    "express": "^4.17.1",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "morgan": "^1.10.0"
+    "debug": "^4.3.1",
+    "joi": "^17.4.0",
+    "monk": "^7.3.3",
+    "morgan": "^1.10.0",
+    "config": "^3.3.4",
+    "consign": "^0.1.6",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
