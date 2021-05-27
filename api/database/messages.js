@@ -28,11 +28,8 @@ function create(message) {
     if (1 == 1) {
         message.createdAt = new Date();
         console.log('Log: messages.js:28', message);
-        //return messages.insert(message);
+        return messages.insert(message);
 
-        messages.insert(message).then(newMessage => {
-            res.json(newMessage);
-          });
 
     }else{
         return Promisse.reject(result.error);

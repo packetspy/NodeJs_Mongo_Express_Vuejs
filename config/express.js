@@ -1,6 +1,4 @@
 const express = require('express');
-const bodyParser = require('body-parser');
-
 const cors = require("cors");
 const morgan = require("morgan");
 
@@ -12,12 +10,11 @@ module.exports = () => {
 
     app.use(morgan('tiny'));
     app.use(cors());
-    app.use(bodyParser.json());
+    app.use(express.json())
+    //app.use(express.urlencoded({ extended: true}))
 
     //Setando variável da aplicação
     app.set('port', process.env.PORT || config.get('server.port'));
-
-    app.use(bodyParser.json());
 
     consign({cwd: 'api'})
     //.then('data')
