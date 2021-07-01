@@ -11,7 +11,7 @@ module.exports = () => {
     app.use(morgan('tiny'));
     app.use(cors());
     app.use(express.json())
-    //app.use(express.urlencoded({ extended: true}))
+    app.use(express.urlencoded({ extended: true}))
 
     //Setando variável da aplicação
     app.set('port', process.env.PORT || config.get('server.port'));
