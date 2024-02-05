@@ -1,7 +1,4 @@
-
-
 # MNEV Stack
-
 Projeto de estudo envolvendo apl,icação de Mongo + NodeJs + Express + VueJs.
 Tutorial origial retirado de [https://vegibit.com/vue-js-express-tutorial/](https://vegibit.com/vue-js-express-tutorial/)
 
